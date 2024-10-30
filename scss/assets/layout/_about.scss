@@ -1,0 +1,35 @@
+/* _____ style about _____ */
+.about-btm {
+  margin-bottom: 120px;
+}
+
+.about-details {
+  @media screen and (max-width: 992px) {
+    padding: 0 15px;
+  }
+
+  h2 {
+    @media screen and (max-width: 992px) {
+      font-size: 25px;
+    }
+  }
+}
+
+.overlay-about {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    @extend %overlay-green;
+  }
+  & .inset {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

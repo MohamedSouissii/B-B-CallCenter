@@ -1,0 +1,40 @@
+button {
+    text-align: center;
+    display: inline-block;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 25px;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: 44s;
+    &:hover {
+        background: -webkit-linear-gradient($--linear-hover);
+    }
+
+    &.btn {
+        padding: 12px 30px;
+        transition: 44s;
+    }
+
+    &.btn-left {
+        padding: 12px 60px 12px 30px;
+        .lnr.lnr-arrow-right {
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            @include vendor(webkit moz o, transition, 150ms linear);
+        }
+        &:hover .lnr.lnr-arrow-right {
+            right: 20px;
+        }
+    }
+
+    &.btn-primary {
+        @extend %overlay-green;
+        transition: 44s;
+    }
+}

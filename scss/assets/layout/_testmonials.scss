@@ -1,0 +1,64 @@
+/* _____ style testmonials _____ */
+.testmonials {
+  background: url('../images/testimonial-bg.jpg.webp') center center / cover no-repeat;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    z-index: -1;
+    @extend %overlay-green;
+  }
+
+  .testmonials-inner {
+    background-color: #fff;
+    padding: 30px 22px;
+    display: flex;
+    @media screen and (max-width: 1090px){
+      align-items: center;
+    }
+    img {
+      margin-right: 30px;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+    }
+
+    .testmonials-items {
+      text-align: left;
+
+      >p {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .owl-nav {
+    position: absolute;
+    right: -42px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width: 1090px) {
+      position: static;
+      flex-direction: row;
+      transform: translateY(30px);
+    }
+    button.owl-next,
+    button.owl-prev {
+      border: 1px solid #f4f4f4;
+      height: 42px;
+      width: 42px;
+      background-color: #fff;
+      border-radius: 0;
+    }
+  }
+}

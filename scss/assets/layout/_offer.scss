@@ -1,0 +1,17 @@
+/* _____ style offer _____ */
+.offer-img {
+  box-shadow: 0 0 40px 0 rgba(132,144,255,0.2);
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 2px solid transparent;
+  @include vendor(webkit moz o, transition, 250ms linear);
+  cursor: pointer;
+  &:hover {
+    border: 2px solid #6a9ddc;
+  }
+}
+
+.offer-details {
+  padding-right: 60px;
+}

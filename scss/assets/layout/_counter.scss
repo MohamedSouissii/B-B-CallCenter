@@ -1,0 +1,14 @@
+/* _____ style counter _____ */
+.count {
+  color: $--primary-color;
+  font-size: 48px;
+    @media screen and (max-width: 576px) {
+        font-size: 30px;
+    }
+  +p{
+    color: #222;
+    @media screen and (max-width: 500px) {
+        font-size: 12px;
+    }
+  }
+}

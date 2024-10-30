@@ -1,0 +1,69 @@
+/* _____ style footer _____ */
+footer.area-footer {
+    background-color: #222;
+    h3 {
+        margin-bottom: 25px;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    span.num {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 30px;
+        color: $--primary-color;
+    }
+
+    form {
+        position: relative;
+        input {
+            width: 100%;
+            border-radius: 57px;
+            font-family: "Poppins", sans-serif;
+            outline: none;
+            padding: 10px 80px 10px 15px;
+            border: none;
+            @include vendor(webkit moz o, transition, 100ms linear);
+            &:focus {
+                box-shadow: 0 0 0 0.20rem rgba(0, 123, 255, 0.25);
+            }
+        }
+        .genric-btn {
+            padding: 10px 15px;
+            @extend %overlay-green;
+            width: 70px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 2px;
+            border-radius: 57px;
+            height: 36px;
+        }
+    }
+    .copy-right {
+        font-size: 13px;
+        a {
+            color: $--primary-color;
+        }
+    }
+    .social-icons
+    {
+        a {
+            display: inline-block;
+            color: #fff;
+            margin-right: 2px;
+            padding: 12px 16px;
+            background-color: #111;
+            font-size: 12px;
+            @include vendor(webkit moz o, transition, 150ms linear);
+            i {
+                color: #cccccc;
+            }
+            &:hover {
+                background-color: $--primary-color;
+            }
+        }
+    }
+}

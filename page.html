@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="using html, scss and javascript, I used some libraries such as owl-carousel and wow" />
+        <meta name="author" content="Kareem Reda Elkassas" />
+        <title>Call Center</title>
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+        <!-- Libraries files -->
+        <link rel="stylesheet" href="css/libs/owl.carousel.min.css" />
+        <link rel="stylesheet" href="css/libs/owl.theme.default.min.css" />
+        <link rel="stylesheet" href="css/libs/animate.min.css" />
+        <link rel="stylesheet" href="css/libs/linearicon.min.css" />
+        <link rel="stylesheet" href="css/libs/all.min.css" />
+
+        <!-- bootstrap 'grid' files -->
+        <link rel="stylesheet" href="css/libs/bootstrap-grid.min.css" />
+
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <style>
+            /* Custom CSS for the layout */
+            .content-section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 2rem;
+                background-color: #f8f9fa;
+            }
+            .content-section img {
+                max-width: 100%;
+                height: auto;
+                width: 40%;
+            }
+            .content-description {
+                width: 55%;
+                padding-left: 2rem;
+            }
+            .content-description h2 {
+                color: #435cb8;
+                font-size: 2rem;
+            }
+            .content-description p {
+                font-size: 1rem;
+                line-height: 1.6;
+                color: #555;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="header-nav">
+            <div class="container position-relative">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col col-lg-2 d-flex align-items-center">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="images/logo.png.webp" alt="logo" class="img-fluid" />
+                           
+                        </a>
+                    </div>
+                    <div class="col col-lg-10 d-none d-lg-block ms-auto">
+                        <ul class="menu">
+                            <li><a href="index.html" class="link-to active" data-scroll="home">Accueil</a></li>
+                            <li><a href="index.html" class="link-to" data-scroll="feature">Pour qoui nous ?</a></li>
+                            <li><a href="index.html" class="link-to" data-scroll="offer">Nos Services</a></li>
+                            <li><a href="index.html" class="link-to" data-scroll="about">À propos</a></li>
+                            <li><a href="index.html" class="link-to" data-scroll="contact">Contactez-nous</a></li>
+                            <li><a href="page.html" class="content-section" data-scroll="Pages">Partenaires</a></li>
+
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+         <!-- _____ nav-site _____ -->
+         <nav class="nav-site">
+            <div class="row justify-content-end">
+                <div class="col col-md-1 d-block d-lg-none">
+                    <div class="bars active">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html" class="link-to activeMobile" data-scroll="home">Accueil </a></li>
+                <li><a href="index.html" class="link-to" data-scroll="feature">feature</a></li>
+                <li><a href="index.html" class="link-to" data-scroll="offer">Nos Services </a></li>
+                <li><a href="index.html" class="link-to" data-scroll="about">À propos</a></li>
+                <li><a href="index.html" class="link-to" data-scroll="contact">Contactez-nous </a></li>
+                <li><a href="page.html" class="content-section" data-scroll="Pages">Partenaires</a></li>
+
+            </ul>
+        </nav>
+        <!-- ./nav-site -->
+
+        <!-- Content Section with Image and Description -->
+        <section class="content-section">
+            <img src="images/sample-image.jpg" alt="Call Center Image" />
+            <div class="content-description">
+                <h2>Notre Partenaire</h2>
+                <p>
+                    TRUVISION CO. est une société spécialisée dans la fourniture et l’installation des équipements des banques en machines de traitement des billets de banques et pièces de monnaie, détection de faux billets, machines de personnalisation des formules de chèques, fabrication des vignettes des chèques sécurisées, système de  gestion de fil d’attente, coffres forts, cameras de surveillance, matériel et consommables informatiques.
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="area-footer section">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <h3 class="text-white">About Us</h3>
+                        <p>
+                            Our call center delivers exceptional support with a skilled team, focusing on resolving issues efficiently and enhancing customer satisfaction with personalized service.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 mt-4 mt-md-0 col-md-6">
+                        <h3 class="text-white">Contact Us</h3>
+                        <p class="mb-4">
+                            For prompt assistance and personalized support. Our team is ready to help with any questions or concerns you may have.
+                        </p>
+                        <span class="num d-block">012-6532-568-9746</span>
+                        <span class="num d-block">012-6532-569-9748</span>
+                    </div>
+                    <div class="col-lg-5 mt-4 mt-md-0 col-md-6">
+                        <h3 class="text-white">Newsletter</h3>
+                        <p class="mb-4">You can trust us. We only send offers, not a single spam.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Email address" />
+                            <button class="genric-btn"><span class="lnr lnr-arrow-right"></span></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-between">
+                    <div class="col-lg-6 mb-4 mb-lg-0 mt-4">
+                        <p class="copy-right">
+                            Copyright <span></span> All rights reserved | This template is made with by
+                            <a href="https://github.com/DevKareemReda/Call-center" target="_blank" title="Kareem Reda">Kareem R. Elkassas</a>
+                        </p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="social-icons d-flex justify-content-lg-end">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

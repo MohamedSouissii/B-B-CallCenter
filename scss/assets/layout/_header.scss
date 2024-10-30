@@ -1,0 +1,115 @@
+/* _____ style header-nav _____ */
+.header-nav {
+    padding: 10px 0;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 99;
+    background-color: #fff;
+    @include vendor(webkit moz o, transition, 250ms linear);
+
+    &.active {
+        box-shadow: -21.213px 21.213px 30px 0 rgba(158, 158, 158, 0.3);
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 60px;
+
+        li {
+            position: relative;
+            margin-left: 10px;
+
+            &:hover ul {
+                opacity: 1;
+                visibility: visible;
+                margin-top: 0;
+            }
+
+            a {
+                color: #222;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding: 5px 10px;
+                font-weight: 400;
+                @include vendor(webkit moz o, transition, 250ms linear);
+
+                & > .lnr-chevron-down {
+                    font-size: 8px;
+                    font-weight: bold;
+                    margin-left: 4px;
+                }
+            }
+
+            &:hover > a,
+            a.active {
+                color: $--primary-color;
+            }
+        }
+
+        ul {
+            position: absolute;
+            width: 200px;
+            box-shadow: 0 0 30px rgba(127, 137, 161, 0.25);
+            padding: 15px 10px;
+            flex-direction: column;
+            top: 100%;
+            background-color: #fff;
+            margin-top: 20px;
+            @include vendor(webkit moz o, transition, 250ms linear);
+            visibility: hidden;
+            opacity: 0;
+
+            li {
+                margin-left: 0;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 64%;
+    z-index: 100;
+    transform: translateY(-50%);
+
+    span {
+        display: block;
+        margin-bottom: 7px;
+        width: 26px;
+        height: 2px;
+        @extend %overlay-green;
+        @include vendor(webkit moz o, transition, 150ms linear);
+    }
+
+    &.active span:first-child {
+        @include vendor(webkit moz o, transform, translateY(9px) rotate(135deg));
+    }
+
+    &.active span:nth-child(2) {
+        opacity: 0;
+        @include vendor(webkit moz o, transform, translateX(-100px));
+    }
+
+    &.active span:last-child {
+        @include vendor(webkit moz o, transform, translateY(-9px) rotate(-135deg));
+        margin-bottom: 0;
+    }
+}
+}

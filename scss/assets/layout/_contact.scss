@@ -1,0 +1,21 @@
+/* _____ style contact _____ */
+#contact {
+	input,
+	textarea {
+		width: 100%;
+		border: 1px solid #ced4da;
+		color: #495057;
+		padding: 15px;
+		margin-bottom: 20px;
+		font-family: "Poppins", sans-serif;
+		font-size: 12px;
+		outline: none;
+		@include vendor(webkit moz o, transition, 100ms linear);
+		&:focus {
+			box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25)
+		}
+	}
+}
+textarea {
+	height: 150px;
+}

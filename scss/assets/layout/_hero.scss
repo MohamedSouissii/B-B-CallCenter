@@ -1,0 +1,35 @@
+/* _____ style banner-view _____ */
+.hero-view {
+    background: url("../images/header-bg.jpg.webp") center center / cover no-repeat;
+    height: 100vh;
+    min-height: 633px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 700px) {
+        background: url(../images/header-bg.jpg.webp) 40% center no-repeat;
+    }
+    .hero-text {
+        h3 {
+            text-transform: uppercase;
+            font-weight: 400;
+            letter-spacing: 3px;
+            @media screen and (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+        h1 {
+            text-transform: capitalize;
+            margin-top: 20px;
+            @media screen and (max-width: 1199px) {
+                font-size: 45px;
+            }
+            @media screen and (max-width: 576px) {
+                font-size: 31px;
+            }
+        }
+        p {
+            padding: 20px 0;
+        }
+    }
+}
