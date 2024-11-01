@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+require('dotenv').config(); // Make sure this is included if using environment variables
 
 const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -10,10 +11,9 @@ const transporter = nodemailer.createTransport({
 
 module.exports = async (req, res) => {
     // Enable CORS
-    res.setHeader('Access-Control-Allow-Credentials', true);
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET,OPTIONS,PATCH,DELETE,POST');
-    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept');
+    res.setHeader('Access-Control-Allow-Methods', 'POST');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
     if (req.method === 'OPTIONS') {
         return res.status(200).end();
